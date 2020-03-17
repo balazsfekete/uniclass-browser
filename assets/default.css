@@ -1,0 +1,96 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: .75em;
+    color: black;
+    background: hsla(0, 0%, 25%, 0.05);
+}
+
+a {
+    color: inherit;
+    text-decoration-color: hsla(0, 0%, 0%, 0.5);
+}
+
+div, main {
+    display: flex;
+}
+
+.node {
+    flex-flow: row;
+    margin: .15em;
+    background: hsla(0, 0%, 25%, 0.05);
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+.label {
+    flex-flow: row;
+    padding: .5em;
+    min-width: 27em;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+
+@media (hover: none) {
+    .nonempty:active {
+        background: hsla(45, 100%, 50%, 1);
+    }
+}
+
+@media (hover: hover) {
+    .nonempty:hover {
+        background: hsla(45, 100%, 50%, 1);
+        cursor: pointer;
+    }
+}
+
+.number {
+    flex-shrink: 0;
+}
+
+.title {
+    margin: 0 1em;
+}
+
+.id {
+    flex-shrink: 0;
+    margin-left: auto;
+    font-weight: 300;
+}
+
+.label {
+    font-weight: 300;
+}
+
+.nonempty {
+    font-weight: 500;
+}
+
+
+.children {
+    min-width: 27em;
+    margin: 2em;
+    flex-grow: 0;
+    flex-direction: column;
+}
+
+header {
+    margin: 2em 2em 0 2em;
+}
+
+footer {
+    margin: 0 2em 2em 2em;
+}
+
+h1 {
+    margin: 0;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+footer {
+    font-weight: 300;
+}
