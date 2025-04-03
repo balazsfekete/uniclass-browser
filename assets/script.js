@@ -79,7 +79,7 @@ function toggleNode() {
 
 //Read file
 var txtFile = new XMLHttpRequest()
-txtFile.open('GET', 'data/data.txt', true)
+txtFile.open('GET', 'data/data-2025-04-03.txt', true)
 txtFile.onreadystatechange = function () {
   if (txtFile.readyState === 4) {
     // document is ready to parse.
